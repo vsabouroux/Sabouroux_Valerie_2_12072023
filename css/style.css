@@ -68,7 +68,46 @@ body {
 
 /****** Hebergements ***********/
 .hebergements {
-    width: 65%;
+   display: flex;
+   flex-direction: column;
+   
+}
+.hebergements-title {
+    display: flex;
+}
+
+.hebergements-cards .card {
+    display: flex;
+    margin-top: 33px;
+}
+
+.hebergements-cards img {
+    width: 50%;
+    height: 100px;
+    border-radius: 20px;
+}
+
+.hebergements-cards .card-content {
+    width: 30%;
+    padding-left: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.hebergements-cards .card-title {
+    margin-top: 10px;
+    margin-bottom: 4px;
+    margin-left: 10px;
+}
+
+.herbergements-cards .card-subtitle {
+    margin: 0;
+}
+
+.hebergements-cards .card-rating {
+    margin-bottom: 5px;
 }
 
 /****** Populaires ***********/
@@ -129,14 +168,78 @@ a:hover {
     color:#0065FC;
     text-decoration: overline;
 }
+fieldset{
+    border: none;
+}
+label{
+   background-color:#F2F2F2;
+   border-top-left-radius: 30px;
+   border-bottom-left-radius: 30px;
+   padding: 10px 10px 10px 10px;
+}
+.boutonrechercher {
+    display: flex;
+    flex-direction: row;
+    justify-content:center ;
+    width:150px;
+    height: 30px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background-color: #0065FC;
+    margin-left: 200px;
+}
+.fa-info{
+    border-style: solid;
+    border-color: #f2f2f2;
+    padding: 5px 10px 5px 10px ;
+    border-radius: 140px;
+}
 .filtres {
     display:flex;
     flex-direction:row;
     justify-content: flex-start;
-    margin-left: 0px;
-    margin-top: 50px;
-    gap: 25px;
+    flex-wrap :wrap;
+    margin-left: 70px;
+    margin-top: 0px;
+    margin-bottom: 80px;
+    gap: 50px;
 }
+.economique {
+    border:#F2F2F2;
+    border-style: solid;
+    border-radius: 10px;
+ }
+ .fa-coins{
+    margin-right: 10px;
+ }
+ .familial {
+    border:#F2F2F2;
+    border-style: solid;
+    border-radius: 10px;
+ }
+ .fa-people-group{
+    margin-right: 10px;
+ }
+ .romantique {
+    border:#F2F2F2;
+    border-style: solid;
+    border-radius: 10px;
+ }
+ .romantique :hover{
+    color: #0065FC;
+    opacity: 30%;
+}
+.fa-heart{
+    margin-right: 10px;
+ }
+ .nospepites {
+    border:#F2F2F2;
+    border-style: solid;
+    border-radius: 10px;
+ }
+ .fa-gem{
+    margin-right: 10px;
+ }
 /**************** Fin de ce que VS a rajouté *****************/
 
 
