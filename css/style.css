@@ -200,10 +200,16 @@ label{
    border-bottom-left-radius: 30px;
    padding: 10px 10px 10px 10px;
 }
-input [type:"submit"] {
-    width:40%;
-    height: 49px;
-    margin-top: -25px;
+.cta {
+    width:10%;
+    height: 30px;
+    margin-top: 0;
+    background-color: #0065FC;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-style: none;
+    color: white;
+
 }
 input [type="icon"] {
     border: none;
@@ -219,8 +225,6 @@ input [type="icon"] {
     flex-direction:row;
     justify-content: flex-start;
     flex-wrap :wrap;
-    margin-left: 20px;
-    margin-bottom: 50px;
     gap: 50px;
 }
 .economique {
@@ -228,7 +232,7 @@ input [type="icon"] {
     border-style: solid;
     border-radius: 30px;
     padding:10px 10px 10px 10px;
- }
+}
  .fa-coins{
     margin-right: 10px;
  }
