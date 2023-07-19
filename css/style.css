@@ -126,6 +126,7 @@ body {
 /****** Populaires ***********/
 .populaires {
     width: 32%;
+    margin-left: 40px;
 }
 
 .populaires-title {
@@ -183,25 +184,29 @@ a:hover {
     color:#0065FC;
     text-decoration: overline;
 }
+form{
+    display:flex;
+    flex-direction: row;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
 fieldset{
     border: none;
 }
 label{
+   height: 49px;
    background-color:#F2F2F2;
    border-top-left-radius: 30px;
    border-bottom-left-radius: 30px;
    padding: 10px 10px 10px 10px;
 }
-.boutonrechercher {
-    display: flex;
-    flex-direction: row;
-    justify-content:center ;
-    width:150px;
-    height: 30px;
-    border-top-right-radius: 50px;
-    border-bottom-right-radius: 50px;
-    background-color: #0065FC;
-    margin-left: 200px;
+input [type:"submit"] {
+    width:40%;
+    height: 49px;
+    margin-top: -25px;
+}
+input [type="icon"] {
+    border: none;
 }
 .fa-info{
     border-style: solid;
@@ -214,17 +219,15 @@ label{
     flex-direction:row;
     justify-content: flex-start;
     flex-wrap :wrap;
-    margin-left: 70px;
+    margin-left: 20px;
+    margin-bottom: 50px;
     gap: 50px;
 }
 .economique {
     border:#F2F2F2;
     border-style: solid;
-    border-radius: 20px;
-    padding-left: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 10px;
+    border-radius: 30px;
+    padding:10px 10px 10px 10px;
  }
  .fa-coins{
     margin-right: 10px;
@@ -232,11 +235,8 @@ label{
  .familial {
     border:#F2F2F2;
     border-style: solid;
-    border-radius: 20px;
-    padding-left: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 10px;
+    border-radius: 30px;
+    padding:10px 10px 10px 10px;
  }
  .fa-people-group{
     margin-right: 10px;
@@ -244,15 +244,11 @@ label{
  .romantique {
     border:#F2F2F2;
     border-style: solid;
-    border-radius: 20px;
-    padding-left: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 10px;
+    border-radius: 30px;
+    padding:10px 10px 10px 10px;
  }
- .romantique :hover{
-    color: #0065FC;
-    opacity: 30%;
+ .romantique:hover{
+    background-color:#DEEBFF;
 }
 .fa-heart{
     margin-right: 10px;
@@ -260,11 +256,8 @@ label{
  .nospepites {
     border:#F2F2F2;
     border-style: solid;
-    border-radius: 20px;
-    padding-left: 10px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-right: 10px;
+    border-radius: 30px;
+    padding:10px 10px 10px 10px;
  }
  .fa-gem{
     margin-right: 10px;
@@ -282,10 +275,34 @@ label{
     padding-bottom: 30px;
     padding-top: 5px;
  }
-
-/**************** Fin de ce que VS a rajouté *****************/
 /**************** Activités *****************/
-
+.activites{
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-bottom: 30px;
+}
+.activites-cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-bottom: 35px;
+}
+.activites .card {
+    width:298px;
+    height: 439px;
+}
+.activites-cards img{
+    width: 100%;
+    height: 400px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.card-title{
+    margin-left: 20px;
+}
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
