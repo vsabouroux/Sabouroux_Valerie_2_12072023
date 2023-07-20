@@ -26,6 +26,11 @@ body {
     /***box-sizing:border-box permet de calibrer la boîte en y incluant à la fois le contenu, le fond et la bordure***/
 }
 
+a {
+    color: black;
+    text-decoration: none;
+}
+
 .section-title {
     margin: 0;
     font-size: 22px;
@@ -53,6 +58,19 @@ body {
 .neutralStar {
     color: var(--main-bg-color)
 }
+/****** Header ***********/
+header .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 30px;
+  
+ }
+ 
+ header .menu a:hover {
+     color:#0065FC;
+     text-decoration: overline;
+ }
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
@@ -85,7 +103,6 @@ body {
 
 .hebergements-cards .card {
     width: 30%;
-    height: 150px;
     margin-top: 33px;
 }
 
@@ -96,13 +113,8 @@ body {
 }
 
 .hebergements-cards .card-content {
-    width: 30%;
-    height: 30px;
-    padding-left: 0px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    box-sizing: border-box;
+    width: 100%;
+    height: 110px;
 }
 .hebergements-cards .card-title {
     margin-top: 10px;
@@ -120,7 +132,6 @@ body {
     font-size: 1em;
     font-weight: 700;
     margin-top: 20px;
-    margin-right: 700px;
     
 }
 /****** Populaires ***********/
@@ -169,21 +180,7 @@ body {
     margin-bottom: 5px;
 }
 /**************** Ce que VS a rajouté *****************/
-.menu {
-   display: flex;
-   flex-direction: row;
-   justify-content: end;
-   gap: 30px;
- 
-}
-a {
-    color: black;
-    text-decoration: none;
-}
-a:hover {
-    color:#0065FC;
-    text-decoration: overline;
-}
+
 form{
     display:flex;
     flex-direction: row;
@@ -227,45 +224,29 @@ input [type="icon"] {
     flex-wrap :wrap;
     gap: 50px;
 }
-.economique {
+.filter_item {
     border:#F2F2F2;
     border-style: solid;
     border-radius: 30px;
     padding:10px 10px 10px 10px;
 }
- .fa-coins{
+
+.filter_item i {
     margin-right: 10px;
- }
- .familial {
-    border:#F2F2F2;
-    border-style: solid;
-    border-radius: 30px;
-    padding:10px 10px 10px 10px;
- }
- .fa-people-group{
+}
+ /* .fa-coins{ */
+    /* margin-right: 10px;
+ } */
+
+ /* .fa-people-group{
     margin-right: 10px;
- }
- .romantique {
-    border:#F2F2F2;
-    border-style: solid;
-    border-radius: 30px;
-    padding:10px 10px 10px 10px;
- }
+ } */
  .romantique:hover{
     background-color:#DEEBFF;
 }
-.fa-heart{
+/* .fa-heart, .fa-gem{
     margin-right: 10px;
- }
- .nospepites {
-    border:#F2F2F2;
-    border-style: solid;
-    border-radius: 30px;
-    padding:10px 10px 10px 10px;
- }
- .fa-gem{
-    margin-right: 10px;
- }
+ } */
  .basdepage {
     display:grid;
     grid-template-columns: 200px 200px  200px;
@@ -285,7 +266,7 @@ input [type="icon"] {
     margin-left: 10px;
     margin-bottom: 30px;
 }
-.activites-cards{
+.activites .activites-cards{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -298,13 +279,13 @@ input [type="icon"] {
     width:298px;
     height: 439px;
 }
-.activites-cards img{
+.activites .activites-cards img{
     width: 100%;
     height: 400px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
-.card-title{
+.activites .card-title{
     margin-left: 20px;
 }
 /* Le code ci-dessous correspond à la version responsive uniquement */
@@ -342,6 +323,10 @@ input [type="icon"] {
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+    .activites .activites-cards{
+        margin-bottom: 35px;
+    }
+    
 }
 
 /* Small devices (phones, less than 768px) */
