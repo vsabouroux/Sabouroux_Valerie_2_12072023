@@ -241,12 +241,13 @@ input [type="icon"] {
  /* .fa-people-group{
     margin-right: 10px;
  } */
- .romantique:hover{
-    background-color:#DEEBFF;
-}
+
 /* .fa-heart, .fa-gem{
     margin-right: 10px;
  } */
+ .filter_item:hover{
+    background-color:#DEEBFF;
+}
  .basdepage {
     display:grid;
     grid-template-columns: 200px 200px  200px;
@@ -276,7 +277,7 @@ input [type="icon"] {
     margin-bottom: 35px;
 }
 .activites .card {
-    width:298px;
+    width:297.5px;
     height: 439px;
 }
 .activites .activites-cards img{
