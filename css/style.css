@@ -93,7 +93,7 @@ header .menu {
 
 .hebergements-cards{
     display: flex;
-    flex-direction:1fr 1fr 1fr;
+    flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 5px;
@@ -254,7 +254,7 @@ input [type="icon"] {
     margin-top: 35px;
     margin-bottom: 35px;
 }
-/***************** Footer ******pb colonnes assistance devrait être en 3ème position elle va à la ligne**************/
+/***************** Footer ******pb colonne assistance devrait être en 3ème position**************/
  .basdepage{
     display: grid;
     grid-template-columns: 200px 200px 200px;
@@ -422,7 +422,7 @@ input [type="icon"] {
     }
     .populaires .populaires-cards img {
         width: 40%;
-        height: 146;
+        height: 146px;
         margin-left: 0;
     }
     .populaires .card-title{
