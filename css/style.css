@@ -254,22 +254,7 @@ input [type="icon"] {
     margin-top: 35px;
     margin-bottom: 35px;
 }
-/***************** Footer ******pb colonne assistance devrait être en 3ème position**************/
- .basdepage{
-    display: grid;
-    grid-template-columns: 200px 200px 200px;
-    grid-template-rows: 0;
-    justify-content:space-between;
-    background-color: #F2F2F2;
-    width: 100%;
-    height: 163px;
-    padding: 20px 15px 20px 15px;
- }
- .basdepage a {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 15px;
- }
+
 /**************** Activités *****************/
 .activites{
     margin-top: 30px;
@@ -298,6 +283,22 @@ input [type="icon"] {
 .activites .card-title{
     margin-left: 20px;
 }
+/***************** Footer ******pb colonne assistance devrait être en 3ème position**************/
+.basdepage{
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: 0;
+    justify-content:space-between;
+    background-color: #F2F2F2;
+    width: 100%;
+    height: 163px;
+    padding: 20px 15px 20px 15px;
+ }
+ .basdepage a {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 15px;
+ }
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
@@ -398,10 +399,18 @@ input [type="icon"] {
         margin-left:0;
         padding :10px 10px 10px 10px;
     }
+    /*****************Filtres & info responsive small devices***********/
     .filtres h3{
         justify-content: left;
     }
-  
+    .filtres{
+        display: grid;
+        grid-template-columns: 150px 150px;
+        grid-template-rows: 50px 50px;
+    }
+    .fa-info{
+        margin-top: 150px;
+    }
     /*****Hebergement and populaires responsive small devices ***/
 
     .hebergements-and-populaires section {
@@ -419,6 +428,9 @@ input [type="icon"] {
     .populaires .populaires-cards{
         flex-direction: column;
         justify-content: space-between;
+    }
+    .populaires .card{
+        width: 120%;
     }
     .populaires .populaires-cards img {
         width: 40%;
@@ -441,12 +453,15 @@ input [type="icon"] {
         height: 125px;
         margin-left: 0;
     }
+    .hebergements .card{
+        width: 250px;
+        height: 230px;
+    }
     
     /*****Activites responsive small devices***/
 
     .activites .activites-cards{
         flex-direction: column;
-        justify-content: space-between;
     }
     .activites .activites-cards img{
         width: 100%;
@@ -454,18 +469,20 @@ input [type="icon"] {
         margin-left: 0;
     }
     .activites .card{
-        width: 30%;
+        width: 100%;
         height: 200px;
-        margin-bottom:15px;
+        margin-bottom:35px;
     }
     .activites .card-title{
         margin-top: 10px;
     }
     /*****Footer responsive small devices****/
     .basdepage{
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 200px;
+        gap:5px;
         height: auto;
-        gap:20px;
+        width:100%;
     }
     /* ... */
 }
