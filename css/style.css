@@ -16,6 +16,7 @@
 body {
     display: flex;
     justify-content: center;
+    margin: 0;
 }
 
 .main-container {
@@ -58,20 +59,112 @@ a {
 .neutralStar {
     color: var(--main-bg-color)
 }
+h1{
+    font-size: 22px;
+}
+p{
+    font-size: 16px;
+}
 /****** Header ***********/
-header .menu {
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-    gap: 30px;
+.menu {
+    display: inline-block;
+    position: relative;
+    left: 1000px;
+    top:5px;
+    font-size: 16px;
   
  }
- 
- header .menu a:hover {
+ img{
+    width: 61px;
+    height: 19px;
+    margin-top:30px;
+ }
+.menu a:hover {
      color:#0065FC;
      text-decoration: overline;
+     white-space:pre-line;
+     line-height:2em;
  }
+/**************** Search bar *****************/
 
+form{
+    display:flex;
+    flex-direction: row;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+fieldset{
+    border: none;
+}
+label {
+   background-color:#F2F2F2;
+   border-top-left-radius: 30px;
+   border-bottom-left-radius: 30px;
+   padding: 10px 10px 10px 10px;
+}
+.cta {
+    width:10%;
+    height: 30px;
+    margin-top: 0;
+    background-color: #0065FC;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-style: none;
+    color: white;
+
+}
+input [type="icon"] {
+    border: none;
+}
+.fa-magnifying-glass{
+    visibility: hidden;
+}
+/*****************Filtres & info *****************/
+.filtres{
+    display:flex;
+    flex-direction: row;
+    gap:15px;
+}
+.filtres h3 {
+    margin-top: 20;
+}
+.filter_item {
+    margin-left: 0;
+    gap:0; 
+    border:#F2F2F2;
+    font-weight: bold;
+    font-size: 14px;
+    border-style: solid;
+    border-radius: 30px;
+    padding:10px 10px 10px 10px;
+    }
+
+.filter_item i {
+    margin-right: 10px;
+}
+ /* .fa-coins{ */
+    /* margin-right: 10px;
+ } */
+
+ /* .fa-people-group{
+    margin-right: 10px;
+ } */
+
+/* .fa-heart, .fa-gem{
+    margin-right: 10px;
+ } */
+ .filter_item:hover{
+    background-color:#DEEBFF;
+}
+.fa-info{
+    font-size: 16px;
+    border-style: solid;
+    border-color: #f2f2f2;
+    padding: 5px 10px 5px 10px ;
+    border-radius: 140px;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
     display: flex;
@@ -86,9 +179,8 @@ header .menu {
 }
 
 /******************* Hebergements ******************/
-
 .hebergements {
-    width: 65%;
+    width: 100%;
 }
 
 .hebergements-cards{
@@ -179,82 +271,6 @@ header .menu {
 .populaires-cards .card-rating {
     margin-bottom: 5px;
 }
-/**************** Search bar *****************/
-
-form{
-    display:flex;
-    flex-direction: row;
-    margin-top: 35px;
-    margin-bottom: 35px;
-}
-fieldset{
-    border: none;
-}
-label {
-   background-color:#F2F2F2;
-   border-top-left-radius: 30px;
-   border-bottom-left-radius: 30px;
-   padding: 10px 10px 10px 10px;
-}
-.cta {
-    width:10%;
-    height: 30px;
-    margin-top: 0;
-    background-color: #0065FC;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
-    border-style: none;
-    color: white;
-
-}
-input [type="icon"] {
-    border: none;
-}
-.fa-magnifying-glass{
-    visibility: hidden;
-}
-/*****************Filtres & info *****************/
-.filtres {
-    display:flex;
-    flex-direction:row;
-    justify-content: flex-start;
-    flex-wrap :wrap;
-    gap: 15px;
-    height: 50px;
-}
-.filter_item {
-    border:#F2F2F2;
-    border-style: solid;
-    border-radius: 30px;
-    padding:10px 10px 10px 10px;
-}
-
-.filter_item i {
-    margin-right: 10px;
-}
- /* .fa-coins{ */
-    /* margin-right: 10px;
- } */
-
- /* .fa-people-group{
-    margin-right: 10px;
- } */
-
-/* .fa-heart, .fa-gem{
-    margin-right: 10px;
- } */
- .filter_item:hover{
-    background-color:#DEEBFF;
-}
-.fa-info{
-    border-style: solid;
-    border-color: #f2f2f2;
-    padding: 5px 10px 5px 10px ;
-    border-radius: 140px;
-    margin-top: 35px;
-    margin-bottom: 35px;
-}
-
 /**************** Activités *****************/
 .activites{
     margin-top: 30px;
@@ -370,8 +386,11 @@ input [type="icon"] {
 /* Small devices (phones, less than 768px) */
 @media screen and (max-width: 768px) {
     img {
-        width: 50%;
-        margin-left: 80px;
+         display: flex;
+         align-self: center;
+         width: 61px;
+         height: 19px;
+         padding-bottom:15px;
     }
     h1 {
         font-size:large;
