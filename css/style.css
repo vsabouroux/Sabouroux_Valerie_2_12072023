@@ -66,25 +66,43 @@ p{
     font-size: 16px;
 }
 /****** Header ***********/
-.menu {
-    display: inline-block;
-    position: relative;
-    left: 1000px;
-    top:5px;
-    font-size: 16px;
-  
- }
- img{
+.logo img{
     width: 61px;
     height: 19px;
-    margin-top:30px;
- }
+    margin-left: 0px;
+    margin-top: 10px;
+   }
+.menu {
+    display: flex;
+    flex-direction:row;
+    justify-content: right;
+    gap:68px;
+    font-size:16px;
+    margin-top: 20px;
+
+}
 .menu a:hover {
-     color:#0065FC;
-     text-decoration: overline;
-     white-space:pre-line;
-     line-height:2em;
- }
+    color:#0065fc;
+    text-decoration:none;
+}
+.ligne_h {
+    position: absolute;
+    top: 0;
+    right: 358px;
+    width:6.5%;
+    height:2px;
+    text-decoration: solid;
+    background-color: #0065FC;
+}
+.ligne_a {
+    position: fixed;
+    top: 0;
+    width:3.5%;
+    height:2px;
+    text-decoration: solid;
+    background-color: #0065FC;
+}
+
 /**************** Search bar *****************/
 
 form{
