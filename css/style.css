@@ -16,7 +16,7 @@
 body {
     display: flex;
     justify-content: center;
-    margin: 0;
+    margin: 0 50px 0 50px;
 }
 
 .main-container {
@@ -61,9 +61,12 @@ a {
 }
 h1{
     font-size: 22px;
+    margin-top: 30px;
+    margin-bottom: 0;
 }
 p{
     font-size: 16px;
+    margin-top: 8px;
 }
 /****** Header ***********/
 .logo img{
@@ -95,14 +98,14 @@ p{
     background-color: #0065FC;
 }
 .ligne_a {
-    position: fixed;
+    position: absolute;
     top: 0;
     width:3.5%;
-    height:2px;
+    height:5px;
     text-decoration: solid;
-    background-color: #0065FC;
+    background-color: #eb0cb0;
+    cursor: pointer;
 }
-
 /**************** Search bar *****************/
 
 form{
@@ -141,6 +144,9 @@ input [type="icon"] {
 .filtres{
     display:flex;
     flex-direction: row;
+    align-items: center;
+    width: 758px;
+    height: 50px;
     gap:15px;
 }
 .filtres h3 {
@@ -195,7 +201,9 @@ input [type="icon"] {
     padding: 30px;
     box-sizing: border-box;
 }
-
+.hebergements-and-populaires .card-subtitle{
+    font-size: 14px;
+}
 /******************* Hebergements ******************/
 .hebergements {
     width: 100%;
@@ -207,13 +215,14 @@ input [type="icon"] {
     justify-content: space-around;
     flex-wrap: wrap;
     gap: 5px;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .hebergements-cards .card {
     width: 30%;
-    margin-top: 33px;
+    margin-top: 0;
+    margin-bottom: 30px;
 }
 
 .hebergements-cards img {
@@ -246,7 +255,7 @@ input [type="icon"] {
 }
 /********************** Populaires *****************/
 .populaires {
-    width: 32%;
+    width: 50%;
     margin-left: 40px;
 }
 
@@ -259,11 +268,12 @@ input [type="icon"] {
 .populaires-cards .card {
     display: flex;
     margin-top: 33px;
+    height: 144px;
+    
 }
 
 .populaires-cards img {
     width: 33%;
-    height: 136px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
 }
@@ -287,22 +297,22 @@ input [type="icon"] {
 }
 
 .populaires-cards .card-rating {
-    margin-bottom: 5px;
+    margin-bottom: 0;
 }
+
 /**************** Activités *****************/
 .activites{
     margin-top: 30px;
-    margin-left: 10px;
+    margin-left: 30px;
     margin-bottom: 30px;
 }
 .activites .activites-cards{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    gap:30px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
 }
 .activites .card {
     width:297.5px;
@@ -327,6 +337,7 @@ input [type="icon"] {
     width: 100%;
     height: 163px;
     padding: 20px 15px 20px 15px;
+    margin-top: 35px;
  }
  .basdepage a {
     display: flex;
