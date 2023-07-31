@@ -74,58 +74,66 @@ p{
     height: 19px;
     margin-left: 0px;
     margin-top: 10px;
-   }
-.menu {
-    display: flex;
-    flex-direction:row;
-    justify-content: right;
-    gap:68px;
-    font-size:16px;
-    margin-top: 20px;
+ }
 
+nav ul{
+    display: flex;
+    justify-content:flex-end;
+    gap:68px;
+    margin: 0;
+    font-size:16px;
+    list-style-type: none;
 }
-.menu a:hover {
-    color:#0065fc;
+nav li{
+    padding-top:23px;
+    margin-top :0;
+}
+nav li:hover {
+    border-top: 2px solid;
+    color:#0065FC;
+}
+nav a:hover{
+    color:#0065FC;
     text-decoration:none;
-}
-.ligne_h {
-    position: absolute;
-    top: 0;
-    right: 358px;
-    width:6.5%;
-    height:2px;
-    text-decoration: solid;
-    background-color: #0065FC;
-}
-.ligne_a {
-    position: absolute;
-    top: 0;
-    width:3.5%;
-    height:5px;
-    text-decoration: solid;
-    background-color: #eb0cb0;
-    cursor: pointer;
 }
 /**************** Search bar *****************/
 
 form{
     display:flex;
     flex-direction: row;
+    justify-content:flex-start;
     margin-top: 35px;
     margin-bottom: 35px;
 }
 fieldset{
+    display:flex;
+    flex-direction: row;
+    justify-content:flex-start;
     border: none;
+    padding:0;
 }
 label {
+   display: flex;
+   justify-content: center;
+   align-items: center;
    background-color:#F2F2F2;
-   border-top-left-radius: 30px;
-   border-bottom-left-radius: 30px;
+   border-top-left-radius: 15px;
+   border-bottom-left-radius: 15px;
    padding: 10px 10px 10px 10px;
+   width:25px;
+}
+.fa-location-dot{
+    display: flex;
+    width: 14px;
+    height: 18px;
+    color: black;
+  
 }
 .cta {
-    width:10%;
-    height: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    width:132px;
+    height: 49px;
     margin-top: 0;
     background-color: #0065FC;
     border-top-right-radius: 20px;
@@ -136,6 +144,10 @@ label {
 }
 input [type="icon"] {
     border: none;
+}
+input .cta{
+    margin:0;
+    padding:0;
 }
 .fa-magnifying-glass{
     visibility: hidden;
@@ -180,12 +192,16 @@ input [type="icon"] {
  .filter_item:hover{
     background-color:#DEEBFF;
 }
-.fa-info{
+.fa-info {
     font-size: 16px;
     border-style: solid;
     border-color: #f2f2f2;
     padding: 5px 10px 5px 10px ;
     border-radius: 140px;
+   
+}
+.filtres, p{
+    padding:0;
     margin-top: 35px;
     margin-bottom: 35px;
 }
@@ -327,7 +343,7 @@ input [type="icon"] {
 .activites .card-title{
     margin-left: 20px;
 }
-/***************** Footer ******pb colonne assistance devrait être en 3ème position**************/
+/***************** Footer ********************/
 .basdepage{
     display: grid;
     grid-template-columns: 200px 200px 200px;
@@ -351,16 +367,18 @@ input [type="icon"] {
 @media screen and (min-width: 1441px) {
     body {
       margin: 0 50px;
+      
     }
 }
 /* Medium devices (tablets, less/equal than 1024px) */
 @media screen and (max-width: 1024px) {
     .hebergements-and-populaires {
-        flex-direction: column;
+        display: grid;
     }
 
     .hebergements {
         width: 100%;
+        grid-template-columns: 924px;
     }
 
     .populaires {
