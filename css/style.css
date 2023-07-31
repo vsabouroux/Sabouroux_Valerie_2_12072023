@@ -343,7 +343,7 @@ input .cta{
 .activites .card-title{
     margin-left: 20px;
 }
-/***************** Footer ********************/
+/***************** Footer ******pb colonne assistance devrait être en 3ème position**************/
 .basdepage{
     display: grid;
     grid-template-columns: 200px 200px 200px;
@@ -367,18 +367,16 @@ input .cta{
 @media screen and (min-width: 1441px) {
     body {
       margin: 0 50px;
-      
     }
 }
 /* Medium devices (tablets, less/equal than 1024px) */
 @media screen and (max-width: 1024px) {
     .hebergements-and-populaires {
-        display: grid;
+        flex-direction: column;
     }
 
     .hebergements {
         width: 100%;
-        grid-template-columns: 924px;
     }
 
     .populaires {
