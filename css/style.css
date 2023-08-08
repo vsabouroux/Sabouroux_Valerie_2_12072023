@@ -468,6 +468,7 @@ p.card-subtitle {
   nav li {
     padding-bottom: 20px;
     margin-bottom: 0;
+    /**ajout de matière pour éviter que le lien "tressaute" au survole**/
     border: 2px solid transparent;
   }
   nav li:hover {
