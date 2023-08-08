@@ -91,6 +91,7 @@ nav ul {
 nav li {
   padding-top: 23px;
   margin-top: 0;
+  /**ajout de matière pour éviter que le lien "tressaute" au survol**/
   border: 2px solid transparent;
 }
 nav li:hover {
@@ -468,7 +469,6 @@ p.card-subtitle {
   nav li {
     padding-bottom: 20px;
     margin-bottom: 0;
-    /**ajout de matière pour éviter que le lien "tressaute" au survol**/
     border: 2px solid transparent;
   }
   nav li:hover {
