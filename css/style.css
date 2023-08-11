@@ -16,7 +16,7 @@
 body {
   display: flex;
   justify-content: center;
-  margin: 0 50px 0 50px;
+  margin: 0;
 }
 
 .main-container {
@@ -91,6 +91,7 @@ nav ul {
 nav li {
   padding-top: 23px;
   margin-top: 0;
+  /**ajout de matière pour éviter que le lien "tressaute" au survol**/
   border: 2px solid transparent;
 }
 nav li:hover {
@@ -244,7 +245,7 @@ p {
   font-size: 14px;
 }
 /******************* Hebergements ******************/
-.hebergements {
+section.hebergements {
   width: 66%;
 }
 .hebergements-cards {
@@ -359,7 +360,7 @@ p.card-subtitle {
 }
 .activites .activites-cards img {
   width: 100%;
-  height: 240px;
+  height: 380px;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
 }
@@ -409,7 +410,7 @@ p.card-subtitle {
   .hebergements-and-populaires {
     flex-direction: column;
   }
-  .hebergements {
+  section.hebergements {
     width: 100%;
   }
   .populaires {
@@ -431,7 +432,6 @@ p.card-subtitle {
   .populaires-cards .card {
     width: 30%;
     height: 146px;
-    padding: 0;
   }
   /***Activites responsive medium devices***/
   #monancrea .section-title {
@@ -456,26 +456,36 @@ p.card-subtitle {
 }
 /*********** Small devices (phones, less than 768px) ***********/
 @media screen and (max-width: 768px) {
+  .main-container {
+    padding: 0;
+  }
   header {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
+  nav{
+    width: 100%;
+  }
   nav ul {
     padding-left: 0;
-    gap: 120px;
+    gap:0;
   }
   nav li {
+    width: 50%;
     padding-bottom: 20px;
     margin-bottom: 0;
-    /**ajout de matière pour éviter que le lien "tressaute" au survol**/
-    border: 2px solid transparent;
+    border: 0px solid transparent;
+    border-bottom: 2px solid deeppink;
+    text-align: center;
   }
   nav li:hover {
     border-bottom: 2px solid #0065fc;
     border-top: none;
   }
-
+  .section_filter {
+    padding: 0 20px;
+  }
   /**********Search bar Small devices (less than 768px)*********/
   #lieu {
     padding-left: 50px;
@@ -492,10 +502,10 @@ p.card-subtitle {
     width: 49px;
     height: 49px;
     position: relative;
-    right: 140px;
+    right: 10px;
   }
   .cta {
-    visibility: hidden;
+    display: none;
   }
 
   /* .filtres {
@@ -540,7 +550,7 @@ p.card-subtitle {
   section.hebergements {
     padding: 0;
   }
-  .hebergements {
+  div.hebergements {
     padding-left: 30px;
   }
   .hebergements-small {
@@ -580,7 +590,7 @@ p.card-subtitle {
 
   .populaires-cards .card {
     flex-direction: row;
-    width: 100%;
+    width: auto;
   }
   /*****************Activites Small devices *************/
   .activites {
