@@ -475,9 +475,8 @@ p.card-subtitle {
     width: 50%;
     padding-bottom: 20px;
     margin-bottom: 0;
-    border: 0px solid transparent;
-    border-bottom: 2px solid deeppink;
-    text-align: center;
+    /**ajout de matière pour éviter que le lien "tressaute" au survol**/
+    border: 2px solid transparent;
   }
   nav li:hover {
     border-bottom: 2px solid #0065fc;
