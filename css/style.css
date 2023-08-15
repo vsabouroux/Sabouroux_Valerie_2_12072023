@@ -569,7 +569,7 @@ p.card-subtitle {
     margin: 0;
   }
   .hebergements .card {
-    width: 100%;
+    width:auto;
   }
   .hebergements .hebergements-cards {
     justify-content: center;
@@ -577,6 +577,18 @@ p.card-subtitle {
     padding-right: 30px;
     margin-bottom: 15px;
   }
+  .hebergements-cards{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .hebergements .card1 { order: 4; }
+  .hebergements .card2 { order: 3; }
+  .hebergements .card3 { order: 2; }
+  .hebergements .card4 { order: 1; }
+  .hebergements .card5 { order: 5; }
+  .hebergements .card6 { order: 6; }
+
   .hebergements-cards .card img {
     width: 100%;
     height: 110px;
