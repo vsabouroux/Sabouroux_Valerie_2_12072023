@@ -291,6 +291,16 @@ p.card-subtitle {
   margin-bottom: 5px;
   margin-left: 10px;
 }
+/* Appliquer la couleur bleue aux 4 premières étoiles */
+/*:nth-child() correspond à une pseudo-class*/
+.card-rating i.fa-xs.fa-solid.fa-star:nth-child(-n+4) {
+color:var(--main-color);
+}
+/* Laisser la 5e étoile neutre avec la couleur définie par l'UI designer */
+.card-rating i.fa-xs.fa-solid.neutral-star {
+  color:var(--main-bg-color);
+}
+
 .afficherplus {
   font-size: 1em;
   font-weight: 700;
