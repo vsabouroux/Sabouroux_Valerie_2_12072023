@@ -298,7 +298,7 @@ color:var(--main-color);
 }
 /* Laisser la 5e étoile neutre avec la couleur définie par l'UI designer */
 .card-rating i.fa-xs.fa-solid.neutral-star {
-  color:var(--main-bg-color);
+color:var(--main-bg-color);
 }
 
 .afficherplus {
@@ -587,6 +587,8 @@ color:var(--main-color);
     padding-right: 30px;
     margin-bottom: 15px;
   }
+
+  /**pour afficher les cartes dans l'ordre souhaité**/
   .hebergements-cards{
     display: flex;
     flex-direction: column;
